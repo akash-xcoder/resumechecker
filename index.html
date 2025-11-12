@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Resume Checker</h1>
+            <p class="subtitle">Get AI-powered feedback on your resume</p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <label for="resumeText" class="label">Paste your resume here:</label>
+                <textarea 
+                    id="resumeText" 
+                    class="textarea" 
+                    placeholder="Paste your resume text here... (e.g., John Doe, Software Engineer, 5 years experience...)"
+                    rows="12"
+                ></textarea>
+                <button id="checkBtn" class="btn btn-primary">
+                    <span class="btn-text">Check Resume</span>
+                    <span class="btn-loader hidden"></span>
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div id="resultBox" class="result-box hidden">
+                    <div id="resultContent" class="result-content"></div>
+                </div>
+                <div id="errorBox" class="error-box hidden">
+                    <div id="errorContent" class="error-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Powered by OpenRouter API & GPT-4o Mini</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
